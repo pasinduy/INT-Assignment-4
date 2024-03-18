@@ -4,13 +4,52 @@
   <meta charset="UTF-8">
   <title>Transition</title>
   <link rel="stylesheet" href="../fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="../normalize.css">
 
   <style>
 
+    section>div{
+      background-color: mediumpurple;
+      color: white;
+      width: 250px;
+      height: 60px;
+      margin: 10px 0;
+
+      position: relative;
+      transition-duration: 1s;
+      border-radius: 0 10px 10px 0;
+      margin-left: -192px;
+    }
+
+    section>div>p{
+      height: fit-content;
+
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 20px;
+      margin: auto;
+    }
+
+    section>div>div{
+      height: fit-content;
+
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 20px;
+      margin: auto;
+    }
+
+    section>div:hover{
+      margin-left: 0;
+
+    }
   </style>
 </head>
 
 <body>
+<section>
   <div>
     <p> Menu One</p>
     <div><i class="fa-regular fa-address-book"></i></div>
@@ -35,6 +74,7 @@
     <p> Menu Six</p>
     <div><i class="fa-regular fa-address-book"></i></div>
   </div>
+</section>
 
   <script src="../fontawesome/js/all.min.js"></script>
 </body>
